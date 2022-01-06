@@ -1,0 +1,387 @@
+:root {
+  --dark: #4e4f41;
+  --light: #d6ede1;
+  --mid-light: #a3c2b5;
+  --color: #789bae;
+  --bluish: #d0d0ff;
+  --lightBluish: #ececfc;
+  --lightGold: rgb(253, 208, 93);
+}
+
+html {
+  background-image: url(newBooks.jpg);
+  background-size: cover;
+  background-position: center;
+  max-height: 60vh;
+}
+
+.menuNav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: goldenrod;
+  margin-bottom: 3rem;
+}
+
+.menuNav a {
+  color: white;
+  padding: .1rem;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 14px;
+  display: block;
+}
+
+.menuList {
+  display: none;
+  margin: 0;
+  padding: 0;
+  justify-content: space-around;
+}
+
+.closeX {
+  color: black;
+  border: none;
+}
+
+.emailButton {
+  background-color: var(--light);
+  width: 5rem;
+  height: 1.75rem;
+  border-radius: 2rem;
+}
+
+.emailButton:hover {
+  background-color: var(--lightBluish);
+  cursor: pointer;
+}
+
+.menuItem {
+  list-style-type: none;
+  /* text-decoration: none; */
+  font-family: "Kanit";
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  border-radius: 1rem;
+  padding: .5rem;
+}
+
+.menuList li {
+  border: 2px var(--dark) solid;
+}
+
+.menuList li:hover {
+  background-color: var(--light);
+  color: var(--dark);
+}
+
+.closeX:hover {
+  background-color: black;
+  color: goldenrod;
+  border-radius: 0;
+}
+
+.hamburger img {
+  width: 2.5rem;
+}
+
+.main {
+  backdrop-filter: blur(12px);
+  outline: 3px goldenrod solid;
+  padding: 1rem;
+  margin: auto 2rem auto 2rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.main h2 {
+  color: goldenrod;
+}
+
+.fa-quote-left {
+  padding-right: 1.5rem;
+}
+
+.fa-quote-right {
+  padding-left: 1.5rem;
+}
+
+.sidebar {
+  backdrop-filter: blur(12px);
+  outline: 3px goldenrod solid;
+  padding: 1rem;
+  margin: 3rem 2rem 8rem 2rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: rgb(255, 254, 223);
+}
+
+.sidebarHome {
+  margin: 3rem auto 15rem auto;
+  font-size: 1.5rem;
+  /* font-family: "Permanent Marker"; */
+  font-family: "Homemade Apple";
+  text-align: center;
+  color: goldenrod;
+}
+
+.sidebarSamp {
+  backdrop-filter: blur(12px);
+  outline: 3px goldenrod solid;
+  padding: 1rem;
+  margin: 3rem 2rem 24rem 2rem;
+  font-family: "Kanit", sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: rgb(255, 254, 223);
+}
+
+.sidebarSamp a {
+  text-decoration: none;
+}
+
+th {
+  padding-left: 0.5rem;
+  padding-bottom: 2rem;
+}
+
+mark {
+  color: goldenrod;
+  background-color: inherit;
+  font-size: 1rem;
+}
+
+h4 {
+  color: goldenrod;
+}
+
+h5 {
+  font-size: 1rem;
+  color: goldenrod;
+  font-variant: small-caps;
+  text-decoration: none;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.parksPic {
+  background-image: url(profile.jpg);
+  width: auto;
+  height: 16rem;
+  background-size: cover;
+  background-position: center;
+  outline: 3px goldenrod solid;
+  padding: 1rem;
+  margin: 3rem 2rem 8rem 2rem;
+}
+
+.mainContent {
+  position: relative;
+  min-height: 100vh;
+}
+
+footer {
+  /* border: 2px solid #00ffff; */
+  position: absolute;
+  width: 100%;
+}
+
+.ltsiLogo {
+  width: 10rem;
+  display: block;
+  margin: auto;
+  margin: 0 auto 0 auto;
+}
+
+/* button {
+  font-family: "Kanit";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-radius: 1rem;
+  padding: .5rem;
+  background-color: var(--dark);
+  color: goldenrod;
+  font-weight: bold;
+  display: inline-block;
+} */
+
+/* widths tablet or greater */
+@media only screen and (min-width: 641px) {
+  header {
+    position: relative;
+  }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    min-height: 8vh;
+  }
+
+  .menuNav {
+    outline: 3px black solid;
+    width: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+    justify-content: space-around;
+    display: flex;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  .closeX {
+    display: none;
+  }
+
+  .logo {
+    margin-left: 1rem;
+  }
+
+  .emailButton {
+    width: 8rem;
+    margin-right: 1rem;
+  }
+
+  .menuList {
+    /* border: 4px red solid; */
+    display: flex;
+    width: 75em;
+  }
+
+  .menuList li {
+    border: none;
+    text-align: center;
+  }
+
+  .menuItem {
+    list-style-type: none;
+    text-decoration: none;
+    font-family: "Kanit";
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    border: none;
+  }
+
+  .sidebarSamp {
+    margin: 3rem 12rem 21rem 12rem;
+  }
+
+  .parksPic {
+    margin: 4rem 12rem 18rem 12rem;
+  }
+}
+
+/* desktop */
+@media only screen and (min-width: 1025px) {
+  header {
+    position: relative;
+  }
+
+  .menuNav {
+    width: 100%;
+    position: relative;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+  }
+
+  .menuList {
+    display: flex;
+  }
+
+  .menuItem {
+    margin-right: 4rem;
+    font-size: 1rem;
+  }
+
+  .menuItem:hover {
+    transform: scale(1.2);
+  }
+
+  .emailButton {
+    height: 2rem;
+  }
+
+  .main {
+    margin: auto 12rem auto 12rem;
+    flex: 1.5;
+    align-items: center;
+    line-height: 2.25rem;
+    font-size: 1rem;
+  }
+
+  .sidebar {
+    margin: 4rem 12rem 18rem 12rem;
+    flex: 1.5;
+    align-items: center;
+    line-height: 2.25rem;
+    font-size: 1.2rem;
+  }
+
+  .sidebarSamp {
+    margin: 4rem 17rem 21rem 17rem;
+    flex: 1.5;
+    align-items: center;
+    line-height: 2.25rem;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+  }
+
+  .parksPic {
+    margin: 4rem 17rem 18rem 17rem;
+    flex: 1.5;
+    height: 55vh;
+  }
+
+  @media only screen and (min-width: 1400px) {
+  .menuItem {
+    margin-right: 6rem;
+    font-size: 1.25rem;
+  }
+
+  .main {
+    margin: auto 15rem auto 15rem;
+    flex: 1.5;
+    align-items: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .sidebar {
+    margin: 7rem 15rem 7rem 15rem;
+    flex: 1.5;
+    align-items: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .main {
+    margin: auto 15rem auto 15rem;
+    flex: 1.5;
+    align-items: center;
+    line-height: 2.5rem;
+    font-size: 1.25rem;
+  }
+
+  .menuItem a {
+    font-size: 1.2rem;
+  }
+
+  .logo {
+    margin-left: 2rem;
+  }
+}

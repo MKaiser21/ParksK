@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="UTF-8" />
+    <title>Kugle Writing Samples</title>
+    <link href="parks.css" rel="stylesheet" />
+    <script src="creativeSamples.js" async></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome 5 icons -->
+    <script
+      src="https://kit.fontawesome.com/bebc09fcd7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="mainContent">
+      <header>
+        <nav class="menuNav" id="menuNav">
+          <img
+            class="logo"
+            id="logo"
+            src="pkGold.jpg"
+            alt="PWK logo"
+            height="34rem"
+          />
+
+          <!-- Navigation links (hidden by default) -->
+          <ul class="menuList" id="menuList">
+            <a onclick="closeMenu()"
+              ><span
+                href="javascript:void(0);"
+                class="closeX menuItem"
+                id="closeX"
+                ><i class="fa fa-close fa-lg"></i></span
+            ></a>
+            <a href="credentials.html"><li class="menuItem">Credentials</li></a>
+            <a href="index.html"><li class="menuItem">Home</li></a>
+            <a href="professionalSamples.html"><li class="menuItem">Professional Samples</li></a>
+            <a href="aboutParks.html"><li class="menuItem">About Parks</li></a>
+            </li>
+          </ul>
+
+          <button id="email" class="emailButton">
+            <i class="fas fa-envelope fa-lg" id="emailId"></i>
+          </button>
+
+          <span href="javascript:void(0);" class="hamburger" onclick="menu()"
+            ><i class="fas fa-bars fa-2x" id="hamBars"></i
+          ></span>
+        </nav>
+      </header>
+
+      <div style="border-spacing: 10rem; margin-top: -6rem; width: 100%; display: table;">
+        <!--<div style="width: 600px; float: left;">-->
+        <div style="display: table-row">
+          <div class="main" style="width: 50%; display: table-cell;">
+            <p class="listHeader">Creative Samples</p>
+              <a
+                href="https://flashfictionmagazine.com/blog/2018/09/05/married-swine/"
+                ><h5>Married Swine</h5>
+              </a>
+              <a href="fearAndOthers.html"><h5>Fear and Others<br><p style="font-size: 1rem; margin-top: -1rem">2018</p></h5></a>
+          </div>
+          
+          <div class="main" style="display: table-cell;">
+            <p class="listHeader">Interviews</p>
+            <a
+              href="In_Conversation.pdf"
+              ><h5>David Hollander</h5>
+            </a>
+            <a href="https://open.spotify.com/episode/2QwTJqpCeeBOQ0uRu12omC?si=d421c4fd1f9f4b04"><h5>Paul La Farge (audio)</h5></a>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div style="margin-top: 12rem">
+          <a href="https://ltsi.tech">
+            <img src="FooterLogo_W.png" class="ltsiLogo" alt="" />
+          </a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

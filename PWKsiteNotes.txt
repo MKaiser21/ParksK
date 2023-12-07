@@ -1,0 +1,29 @@
+links should open in new tabs
+
+professional samples
+	format like creative samples
+	one link for all DD stories
+
+creative samples
+	fear and others -- add 2018 below
+
+about parks
+	format for xl screen
+
+home
+	fix LTSI link placement
+
+credentials
+	fix formatting
+	add resume
+
+menu bar
+	remove space at top
+	smaller font?
+	on hover: keep outline within gold bar 
+	center align (top-bottom)
+
+corner PK
+	link to home page
+
+

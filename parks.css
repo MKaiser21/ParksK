@@ -93,7 +93,6 @@ html {
   font-family: "Kanit", sans-serif;
   font-size: 0.8rem;
   line-height: 1.5rem;
-  font-style: italic;
   text-align: center;
 }
 
@@ -189,6 +188,17 @@ h5 {
   min-height: 100vh;
 }
 
+#embeddedStory {
+  height: 45rem;
+  width: 43rem;
+  
+  position: relative;
+}
+
+.embeddedDiv {
+  text-align: center;
+}
+
 footer {
   /* border: 2px solid #00ffff; */
   position: absolute;
@@ -202,17 +212,9 @@ footer {
   margin: 0 auto 0 auto;
 }
 
-/* button {
-  font-family: "Kanit";
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  border-radius: 1rem;
-  padding: .5rem;
-  background-color: var(--dark);
-  color: goldenrod;
-  font-weight: bold;
-  display: inline-block;
-} */
+.listHeader {
+  text-decoration: italic;
+}
 
 /* widths tablet or greater */
 @media only screen and (min-width: 641px) {
@@ -347,7 +349,9 @@ footer {
     height: 55vh;
   }
 
-  @media only screen and (min-width: 1400px) {
+}
+
+@media only screen and (min-width: 1400px) {
   .menuItem {
     margin-right: 6rem;
     font-size: 1.25rem;
@@ -375,6 +379,7 @@ footer {
     align-items: center;
     line-height: 2.5rem;
     font-size: 1.25rem;
+    color: white;
   }
 
   .menuItem a {
@@ -384,4 +389,28 @@ footer {
   .logo {
     margin-left: 2rem;
   }
+
+  .listHeader {
+    font-size: 2.5rem;
+    font-style: italic;
+    color: goldenrod;
+    font-variant: small-caps;
+  }
+
+  h5 {
+    font-size: 1.5rem;
+    text-decoration: none;
+  }
+
+  a:link {
+    text-decoration: none;
+  }
+
+  /* a:visited {
+    color: green;
+  } */
+
+  /* a:hover { 
+    color: blue;
+  } */
 }
